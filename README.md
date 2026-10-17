@@ -1,66 +1,111 @@
 # Powerbi-tarification-assurance
 Dashboard Power BI - Diagnostic de la sinistralité auto et modélisation d'une prime actuarielle.
 
-# 🚗 Diagnostic Loss Ratio - Assurance Auto
+# Diagnostic de rentabilité d'un portefeuille d'assurance automobile
 
-Dashboard Power BI d'analyse de la sinistralité automobile, construit sur 678 000 polices d'assurance réelles (dataset freMTPL2), avec simulation d'une prime actuarielle et diagnostic des segments de risque sous-tarifés.
+Projet Power BI visant à identifier les segments de clientèle responsables de la dégradation de la rentabilité d'un portefeuille d'assurance auto et à formuler des recommandations tarifaires fondées sur les données.
 
-## Contexte & Problématique
+## Contexte 
 
-Un directeur technique assurance auto observe que le Loss Ratio (ratio sinistres/primes) de son portefeuille augmente depuis 2 ans, sans en identifier la cause précise : tarification inadaptée ? Concentration du risque sur certains segments ? Ce projet reproduit la démarche d'un data analyst chargé de répondre à cette problématique.
+Un assureur constate une hausse de sa sinistralité sans parvenir à identifier les segments de clientèle à l'origine du phénomène.
+L'objectif est de déterminer quels profils génèrent le plus de pertes techniques, de distinguer les signaux réellement significatifs des effets liés à de faibles volumes de données et de proposer des actions correctives.
 
 ## Objectif
 
-Identifier les segments de portefeuille structurellement déficitaires (Loss Ratio > 100%), en distinguant les signaux statistiquement fiables des artefacts liés à un faible volume de données, puis formuler une recommandation de tarification actionnable.
+- Mesurer la rentabilité des segments du portefeuille.
+- Identifier les populations les plus risquées.
+- Analyser les facteurs expliquant les écarts de sinistralité.
+- Formuler des recommandations de tarification exploitables par les équipes métier.
 
 ## Données
 
 - **Source** : [freMTPL2freq / freMTPL2sev](https://www.openml.org/d/41214) - dataset public French Motor Third-Party Liability (Christophe Dutang, Computational Actuarial Science with R, CRC 2018)
-- **Volume** : 678 013 polices, 26 383 sinistres
-- **Variables clés** : exposition, âge conducteur, puissance véhicule, région, coefficient Bonus-Malus, montant des sinistres
+  
+**Volume analysé** :
+- 678 007 contrats
+- 26 383 sinistres
+- 358 359 années d'exposition
+  
+**Variables clés** : exposition, âge conducteur, puissance véhicule, région, coefficient Bonus-Malus, montant des sinistres
 
-##  Méthodologie
+## Méthodologie
 
-1. **Préparation des données** (Power Query) : nettoyage, contrôle qualité (bornes métier : âge ≥18, exposition ∈[0,1], Bonus-Malus ∈[50,350]), jointure des tables fréquence/sévérité
-2. **Modélisation** : modèle en étoile, tables `Freq_Polices` / `Sev_Sinistres` reliées par `IDpol`
-3. **Simulation d'une prime pure actuarielle** (DAX), en l'absence de données de primes réelles dans le dataset : Prime Pure = Fréquence de sinistres × Coût moyen par sinistre
+### Préparation des données
 
-4. **Contrôle de crédibilité statistique** : chaque signal a été vérifié sur son volume de sinistres observés avant d'être retenu comme conclusion (seuil de vigilance : <50 sinistres)
-5. **Analyse croisée** (matrices DAX) pour distinguer les effets de fréquence et de sévérité, et détecter les effets de confusion entre variables (ex : âge × puissance véhicule)
+- Nettoyage et contrôle qualité sous Power Query.
+- Vérification des règles métier :
+  - âge conducteur ≥ 18 ans ;
+  - exposition comprise entre 0 et 1 ;
+  - Bonus-Malus compris entre 50 et 350.
+- Jointure des données de fréquence et de sévérité.
 
-## Insights principaux
+### Modélisation
 
-### 1. Un segment restreint concentre l'essentiel de la perte
-Les jeunes conducteurs (18-25 ans), 5,7% du portefeuille, affichent un Loss Ratio de **454,7%** (vs 77-92% pour les autres tranches d'âge). Signal statistiquement solide (2 403 sinistres observés).
+- Construction d'un modèle en étoile sous Power BI.
+- Création de mesures DAX pour :
+  - la fréquence des sinistres ;
+  - le coût moyen par sinistre ;
+  - la prime pure simulée ;
+  - les indicateurs de rentabilité.
 
-### 2. Effet cumulatif fréquence × sévérité
-Le croisement âge × puissance révèle un Loss Ratio de **897,6%** chez les jeunes conducteurs avec véhicule de puissance moyenne : fréquence de sinistres 2,3x supérieure à la moyenne, sévérité (coût moyen par sinistre) 3,9x supérieure.
+### Simulation actuarielle
 
-### 3. Angle mort du système Bonus-Malus
-Les polices au coefficient neutre (100 - typiquement les nouveaux conducteurs sans historique) affichent le Loss Ratio le plus élevé du portefeuille (**978,6%**). Le système actuel, basé sur l'historique, ne peut par construction pas anticiper le risque des nouveaux entrants.
+En l'absence de primes réelles dans le jeu de données, simulation d'une prime pure actuarielle :
 
-## Recommandation
+Prime pure = Fréquence des sinistres × Coût moyen par sinistre
 
-Mettre en place une surprime ciblée dès la souscription pour les jeunes conducteurs sur véhicules de puissance moyenne à élevée, plutôt que de s'appuyer uniquement sur la correction a posteriori du Bonus-Malus.
+### Contrôle statistique
+
+- Vérification de la crédibilité des résultats selon les volumes observés.
+- Mise en place d'un seuil de vigilance pour les segments comportant moins de 50 sinistres.
+- Analyse croisée des variables afin d'identifier les principaux facteurs de risque et limiter les effets de confusion (exemple : âge du conducteur × puissance du véhicule).
+
+## Résultats  
+
+### 1. Jeunes conducteurs : principal facteur de risque
+Les conducteurs âgés de 18 à 25 ans représentent seulement **5,7 %** **du portefeuille**, mais affichent **un indice de rentabilité de** **454,7 %**, contre **77 %** à **92 %** pour les autres tranches d'âge.
+
+### 2. Effet combiné âge × puissance
+Les jeunes conducteurs possédant des véhicules de puissance moyenne affichent un **indice de rentabilité** de **897,6 %**.
+Cette sur-sinistralité s'explique par :
+- une fréquence de sinistres **2,3** fois supérieure à la moyenne ;
+- un coût moyen par sinistre **3,9** fois plus élevé.
+
+### 3. Limite du système Bonus-Malus
+Les contrats présentant un Bonus-Malus neutre (100) affichent l'indice de rentabilité le plus élevé du portefeuille (**978,6 %**).
+
+Ce résultat suggère que le système basé uniquement sur l'historique de conduite évalue difficilement le risque des nouveaux assurés.
+
+## Recommandation métier
+
+Mettre en place une surprime à la souscription pour les jeunes conducteurs, particulièrement sur les véhicules de puissance moyenne à élevée, afin d'améliorer la rentabilité du portefeuille dès l'entrée du contrat.
+
+## Compétences mobilisées
+- Power BI
+- Power Query
+- DAX
+- Modélisation de données
+- Data Visualisation
+- Analyse statistique
+- Assurance IARD
+- Data Storytelling
+- Aide à la décision
+
+## Stack technique
+- **Power Query** : nettoyage et préparation des données
+- **DAX** : mesures actuarielles (fréquence, sévérité, prime pure, Loss Ratio), mise en forme conditionnelle par règles
+- **Power BI** : modélisation en étoile, arborescence de décomposition interactive, paramètre de champ
 
 ## Limites
 
-- Absence de données de primes réelles dans le dataset (prime pure simulée)
-- Le signal régional (une région à 239,6% de Loss Ratio) repose sur un faible volume (77 sinistres) - à interpréter avec prudence
-- Absence d'indicateur de fraude dans le dataset source
-- Dataset figé dans le temps (pas de flux temps réel)
+- Les données ne contiennent pas les primes réellement facturées aux assurés. Les indicateurs de rentabilité reposent donc sur une prime actuarielle simulée calculée à partir de la fréquence et du coût moyen des sinistres.
+- Certains segments présentent des volumes de sinistres limités. Par exemple, une région affiche un indice de rentabilité élevé (239,6 %), mais repose sur seulement 77 sinistres observés. Ces résultats doivent être interprétés avec prudence.
+- Le jeu de données ne comporte pas d'informations relatives à la fraude, qui pourrait expliquer une partie de la sinistralité observée.
+- L'analyse repose sur un historique figé et ne prend pas en compte l'évolution temporelle du portefeuille ou des comportements des assurés.
 
 ## Aperçu du dashboard
 ![Vue d'ensemble du dashboard](dashboard-overview.png)
 📄 [Voir le dashboard complet (PDF)](Ratio%20Loss%20Auto-1.pdf)
-
-
-
-## Stack technique
-
-- **Power Query** : nettoyage et préparation des données
-- **DAX** : mesures actuarielles (fréquence, sévérité, prime pure, Loss Ratio), mise en forme conditionnelle par règles
-- **Power BI** : modélisation en étoile, arborescence de décomposition interactive, paramètre de champ
 
 ## Structure du repo
 
@@ -72,7 +117,6 @@ Mettre en place une surprime ciblée dès la souscription pour les jeunes conduc
     ├── note-cadrage.md
     └── methodologie.md
 ```
-
 
 ## Contact
 
