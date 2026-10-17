@@ -104,7 +104,7 @@ Mettre en place une surprime à la souscription pour les jeunes conducteurs, par
 - L'analyse repose sur un historique figé et ne prend pas en compte l'évolution temporelle du portefeuille ou des comportements des assurés.
 
 ## Aperçu du dashboard
-![Vue d'ensemble du dashboard](dashboard-overview.png)
+![Vue d'ensemble du dashboard](dashboard-overview_.png)
 📄 [Voir le dashboard complet (PDF)](Ratio%20Loss%20Auto-1.pdf)
 
 ## Structure du repo
