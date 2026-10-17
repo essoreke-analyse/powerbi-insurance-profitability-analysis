@@ -105,7 +105,7 @@ Mettre en place une surprime à la souscription pour les jeunes conducteurs, par
 
 ## Aperçu du dashboard
 ![Vue d'ensemble du dashboard](dashboard-overview_.png)
-📄 [Voir le dashboard complet (PDF)](Ratio%20Loss%20Auto-1.pdf)
+
 
 ## Structure du repo
 
