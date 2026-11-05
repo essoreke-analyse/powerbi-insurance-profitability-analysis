@@ -1,17 +1,37 @@
 # Diagnostic de la sinistralité d'un portefeuille d'assurance automobile
 
-Dashboard Power BI : diagnostic de la sinistralité auto et indice de prime pure par segment, validé statistiquement (écrêtement des sinistres graves, intervalles de confiance, GLM de Poisson).
+Dashboard Power BI qui identifie les profils de conducteurs qui coûtent le plus cher à un assureur auto, avec une vérification statistique des résultats en Python.
 
 > **En bref**
-> - **Les jeunes conducteurs (18-25 ans) ont une fréquence de sinistres 2 fois plus élevée** que la moyenne. Leur indice de prime pure est de **225 %** une fois les sinistres graves écrêtés.
-> - **132 sinistres graves (0,5 % des sinistres) représentent 33 % du coût total.** Un seul sinistre de 4,1 M€ suffisait à tripler l'indice de plusieurs segments : sans écrêtement, les conclusions auraient été fausses.
-> - **Le Bonus-Malus fonctionne :** la fréquence monte régulièrement avec le coefficient, et il explique à lui seul l'essentiel du sur-risque des jeunes. L'enjeu est de tarifer les **nouveaux conducteurs**, qui démarrent tous à 100, dès la souscription.
+> - **Les jeunes conducteurs (18-25 ans) ont deux fois plus d'accidents que la moyenne.** Une année d'assurance d'un jeune coûte environ **2,25 fois plus** en sinistres qu'une année d'assurance moyenne (indice de prime pure de 225 %).
+> - **Quelques accidents très graves pèsent énormément.** 132 sinistres, soit 0,5 % du total, représentent un tiers du coût. Un seul accident de 4,1 M€ suffisait à faire paraître certains profils trois fois plus risqués qu'ils ne le sont. Pour éviter ce piège, chaque sinistre est **plafonné** à 34 495 € dans les comparaisons (c'est ce qu'on appelle l'**écrêtement**).
+> - **Le Bonus-Malus, la « note de conduite » des assurés, fonctionne bien** : plus elle est mauvaise, plus le conducteur a d'accidents. Le vrai enjeu est de bien tarifer les **nouveaux conducteurs**, qui n'ont pas encore d'historique, dès la signature du contrat.
+>
+> *Les termes techniques sont expliqués dans le [lexique](#lexique) ci-dessous.*
 
 ![Tableau de bord](docs/dashboard.png)
 
 [Voir le dashboard complet (PDF, 2 pages)](docs/dashboard.pdf) · [Notebook de validation statistique](notebooks/validation_statistique.ipynb)
 
 Projet Power BI visant à identifier les segments de clientèle qui coûtent le plus cher dans un portefeuille d'assurance auto et à formuler des recommandations tarifaires fondées sur les données.
+
+## Lexique
+
+| Terme | Ce que ça veut dire |
+|---|---|
+| **Sinistre** | Un accident ou un dommage déclaré à l'assureur, qui lui coûte de l'argent. |
+| **Sinistralité** | L'ensemble des sinistres d'un groupe d'assurés : combien il y en a et combien ils coûtent. |
+| **Exposition** | La durée pendant laquelle un contrat est assuré, en années. Un contrat souscrit en juillet compte pour 0,5 an la première année. On compare les profils « par année d'assurance » pour être juste. |
+| **Fréquence** | Le nombre de sinistres par année d'assurance. Une fréquence de 7,4 % signifie environ 7 accidents par an pour 100 conducteurs. |
+| **Coût moyen** | Le coût moyen d'un sinistre. |
+| **Prime pure** | Ce que coûtent les sinistres d'un assuré en un an (fréquence × coût moyen). C'est le prix minimum à facturer pour couvrir les sinistres, avant les frais et la marge de l'assureur. |
+| **Indice de prime pure** | La prime pure d'un profil comparée à la moyenne. 100 % = profil moyen ; 225 % = profil 2,25 fois plus coûteux ; 85 % = profil 15 % moins coûteux. |
+| **Bonus-Malus** | La « note de conduite » de chaque assuré en France. Elle démarre à 100 pour un nouveau conducteur, baisse de 5 % par an sans accident responsable (jusqu'à 50, le meilleur niveau) et augmente de 25 % à chaque accident responsable (jusqu'à 350). En dessous de 100 : **bonus**, la prime baisse. Au-dessus de 100 : **malus**, la prime augmente. |
+| **Sinistre grave** | Un sinistre exceptionnellement cher, souvent un accident avec des blessés. Ici, les 0,5 % de sinistres les plus chers (plus de 34 495 €). |
+| **Écrêtement** | Plafonner chaque sinistre à un montant maximum (ici 34 495 €) pour comparer les profils. Un accident de 4 M€ compte alors pour 34 495 €. Le surplus n'est pas oublié : il est réparti sur l'ensemble des assurés, au lieu de faire paraître dangereux le petit groupe où il est tombé par hasard. |
+| **Intervalle de confiance** | La fourchette dans laquelle se trouve très probablement la vraie valeur. Plus un profil compte de sinistres, plus la fourchette est étroite et le résultat fiable. |
+| **Crédibilité** | Le degré de confiance qu'on peut accorder au résultat d'un profil. Sous 50 sinistres, il est trop fragile pour décider seul d'un tarif. |
+| **GLM de Poisson** | Un modèle statistique standard en tarification. Il mesure l'effet de chaque caractéristique (âge, puissance, Bonus-Malus) **toutes choses égales par ailleurs**, c'est-à-dire en tenant compte des autres en même temps. |
 
 ## Contexte
 
@@ -87,6 +107,13 @@ Chaque sinistre est donc **plafonné au 99,5e percentile (34 495 €)** pour cal
 
 ## Résultats
 
+### Préalable : quelques sinistres pèsent très lourd
+
+![Concentration du coût des sinistres](docs/figures/concentration_cout.png)
+
+> **Ce que ça veut dire.** Si tous les sinistres coûtaient la même chose, la courbe suivrait la diagonale en pointillés. Elle monte au contraire très vite : les 0,5 % de sinistres les plus chers (132 accidents) représentent 33 % de tout ce que l'assureur a payé.
+> Conséquence pratique : dans un petit groupe de conducteurs, un seul accident grave peut faire exploser la moyenne et donner une fausse image du risque. C'est pourquoi tous les résultats ci-dessous sont présentés avec écrêtement (chaque sinistre plafonné à 34 495 €).
+
 ### 1. Jeunes conducteurs : une fréquence deux fois plus élevée
 
 Les conducteurs âgés de 18 à 25 ans représentent **5,7 % du portefeuille**, mais ont une fréquence de **14,8 %**, contre 7,4 % en moyenne. L'intervalle de confiance est serré (14,2 % à 15,4 %).
@@ -96,12 +123,20 @@ L'indice brut (455 %) surestimait l'écart : un seul sinistre de 4,1 M€ (condu
 
 ![Indice brut et écrêté](docs/figures/indice_brut_vs_ecrete.png)
 
+> **Ce que ça veut dire.** Sur 100 jeunes conducteurs assurés pendant un an, on compte environ 15 accidents, contre 7 pour 100 conducteurs en moyenne. Ce n'est pas un hasard : la fourchette de confiance est très étroite, car le résultat repose sur plus de 2 400 sinistres.
+> En coût, un jeune conducteur revient à l'assureur environ 2,25 fois plus cher qu'un conducteur moyen, et non 4,5 fois comme l'indiquait le calcul sans plafond. La différence venait d'un seul accident exceptionnel.
+> Le graphique le montre : les barres orange (sans plafond) exagèrent les écarts, les barres bleues (avec plafond) donnent la vraie hiérarchie des risques.
+
 ### 2. Effet combiné âge × puissance : un signal réel mais modeste
 
 Les jeunes conducteurs de véhicules de puissance moyenne (7 à 9) ont une fréquence **2,3 fois** supérieure à la moyenne.
 Le GLM de Poisson montre une **interaction âge × puissance d'environ +25 %** sur la fréquence : ces jeunes ont 25 % de sinistres en plus de ce que prédisent l'âge et la puissance séparément (p ≈ 0,01 après correction de la surdispersion).
 
 Leur indice écrêté est de **295 %**. L'indice brut de 897,6 % et le « coût moyen 3,9 fois plus élevé » venaient presque entièrement du sinistre de 4,1 M€ : sans lui, le coût moyen n'est plus que 1,4 fois la moyenne.
+
+> **Ce que ça veut dire.** Le jeune âge et la puissance du véhicule se cumulent : un jeune au volant d'une voiture de puissance moyenne a encore un peu plus d'accidents (+25 %) que ce qu'on attendrait en additionnant simplement les deux effets.
+> L'effet est réel, mais modeste. Le premier calcul suggérait un profil 9 fois plus coûteux que la moyenne ; en réalité, il l'est environ 3 fois. C'est un signal à prendre en compte dans le tarif, pas une alerte rouge.
+> Le « p ≈ 0,01 » signifie que, si cet effet n'existait pas, il n'y aurait qu'environ 1 chance sur 100 d'observer un écart pareil par hasard : le résultat est donc fiable.
 
 ### 3. Le Bonus-Malus fonctionne : l'enjeu est la souscription des nouveaux conducteurs
 
@@ -113,11 +148,21 @@ Le niveau neutre (100) a un indice écrêté de **359 %** (979 % en brut, à cau
 
 ![Effet de l'âge avant et après prise en compte du Bonus-Malus](docs/figures/glm_age_bonus_malus.png)
 
+> **Ce que ça veut dire.** Le Bonus-Malus, la note de conduite des assurés, fait bien son travail : les bons conducteurs (bonus fort) ont environ 6 accidents par an pour 100 conducteurs, alors que les plus mauvais (malus fort) en ont près de 57.
+> Le graphique montre une découverte importante. Si l'on regarde l'âge seul (points orange), les jeunes semblent deux fois plus risqués. Mais à Bonus-Malus égal (points bleus), un jeune n'a pas plus d'accidents qu'un conducteur de 41-60 ans. Autrement dit, ce qui compte surtout n'est pas l'âge en lui-même, mais l'absence d'historique de conduite, que le Bonus-Malus résume déjà.
+> Le problème se situe donc au moment de la souscription : un nouveau conducteur démarre à 100, sans historique, et le Bonus-Malus ne peut pas encore distinguer un futur bon conducteur d'un futur mauvais. Pendant ces premières années, c'est à l'assureur d'ajuster le prix avec d'autres informations, comme l'âge et le véhicule.
+
 ## Recommandations métier
 
 1. **Tarifer les nouveaux conducteurs dès la souscription.** Pour les contrats sans historique (Bonus-Malus à 100), appliquer une majoration selon l'âge, renforcée pour les jeunes au volant d'un véhicule de puissance moyenne ou élevée. Le Bonus-Malus prend ensuite le relais.
 2. **Traiter les sinistres graves à part.** Écrêter les sinistres au-delà du seuil et financer leur surcoût par une charge mutualisée sur tout le portefeuille (ou par la réassurance), plutôt que de surtarifer un segment à cause d'un sinistre isolé.
 3. **Ne pas réviser le tarif d'un segment sur un indice brut.** Toujours vérifier le nombre de sinistres, l'intervalle de confiance et l'indice écrêté. Par exemple, la région R21 (Champagne-Ardenne) affichait 240 % à cause d'un seul sinistre de 369 000 € : son indice écrêté est proche de la moyenne.
+
+> **En résumé pour l'assureur :**
+> - faire payer un peu plus les nouveaux conducteurs jeunes dès la signature du contrat, en particulier selon le véhicule ;
+> - laisser ensuite le Bonus-Malus ajuster le prix selon leur conduite réelle ;
+> - financer les accidents exceptionnels collectivement plutôt que de pénaliser au hasard un groupe d'assurés ;
+> - avant de changer un prix, vérifier qu'un résultat repose sur assez de sinistres et ne dépend pas d'un seul accident.
 
 ## Compétences mobilisées
 - Power BI
