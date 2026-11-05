@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Ratio Loss Auto"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "61f7816b-2080-4a9a-b9f7-34a34710796d"
+  }
+}

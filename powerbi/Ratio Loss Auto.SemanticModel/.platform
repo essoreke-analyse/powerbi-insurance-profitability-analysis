@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Ratio Loss Auto"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ce0395f1-3280-4a82-99df-cc5b0dc51ada"
+  }
+}

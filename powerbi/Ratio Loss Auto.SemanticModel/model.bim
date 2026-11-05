@@ -1,0 +1,3573 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Freq_Polices\",\"Sev_Sinistres\",\"_Mesures\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.138.782.0 (24.11)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "fr-FR",
+    "cultures": [
+      {
+        "name": "fr-FR",
+        "linguisticMetadata": {
+          "content": {
+            "Entities": {
+              "freq_polices": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Freq_Polices"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "freq polices": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Freq_Polices": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "freq_polices.A_sinistre": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Freq_Polices",
+                    "ConceptualProperty": "A_Sinistre"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "A sinistre": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "A_Sinistre": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "freq_polices.I_dpol": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Freq_Polices",
+                    "ConceptualProperty": "IDpol"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "I dpol": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "IDpol": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "freq_polices.area": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Freq_Polices",
+                    "ConceptualProperty": "Area"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "area": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "locale": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "locality": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "neighbourhood": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "district": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "continent": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "field": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "neighborhood": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "section": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "space": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  }
+                ]
+              },
+              "freq_polices.bonus_malus": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Freq_Polices",
+                    "ConceptualProperty": "BonusMalus"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "bonus malus": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "BonusMalus": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "freq_polices.claim_nb": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Freq_Polices",
+                    "ConceptualProperty": "ClaimNb"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "claim nb": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "ClaimNb": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "nb": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "freq_polices.claim_total": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Freq_Polices",
+                    "ConceptualProperty": "ClaimTotal"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "claim total": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "ClaimTotal": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "claim aggregate": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "claim overall": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ]
+              },
+              "freq_polices.density": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Freq_Polices",
+                    "ConceptualProperty": "Density"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "density": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "compactness": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "concentration": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "solidity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "concreteness": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "thickness": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "mass": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "bulk": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "stupidity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  },
+                  {
+                    "denseness": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  },
+                  {
+                    "slowness": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  }
+                ]
+              },
+              "freq_polices.driv_age": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Freq_Polices",
+                    "ConceptualProperty": "DrivAge"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "driv age": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "DrivAge": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "driv oldness": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "driv stage": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "driv phase": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "driv era": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.475
+                    }
+                  },
+                  {
+                    "driv epoch": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.475
+                    }
+                  },
+                  {
+                    "driv period": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.461
+                    }
+                  }
+                ]
+              },
+              "freq_polices.exposure": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Freq_Polices",
+                    "ConceptualProperty": "Exposure"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "exposure": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "introduction": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "acquaintance": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "contact": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "experience": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "revelation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  },
+                  {
+                    "disclosure": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  },
+                  {
+                    "coverage": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  },
+                  {
+                    "limelight": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.466
+                    }
+                  },
+                  {
+                    "publicity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "spotlight": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  }
+                ]
+              },
+              "freq_polices.region": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Freq_Polices",
+                    "ConceptualProperty": "Region"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "region": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "location": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.818
+                    }
+                  },
+                  {
+                    "province": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "district": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "section": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "zone": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "continent": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  }
+                ]
+              },
+              "freq_polices.tranche_age_conducteur": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Freq_Polices",
+                    "ConceptualProperty": "Tranche_Age_Conducteur"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "tranche age conducteur": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Tranche_Age_Conducteur": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "freq_polices.tranche_puissance": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Freq_Polices",
+                    "ConceptualProperty": "Tranche_Puissance"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "tranche puissance": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Tranche_Puissance": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "puissance": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "freq_polices.veh_age": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Freq_Polices",
+                    "ConceptualProperty": "VehAge"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "veh age": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "VehAge": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "veh oldness": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "veh stage": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "veh phase": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "veh era": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.475
+                    }
+                  },
+                  {
+                    "veh epoch": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.475
+                    }
+                  },
+                  {
+                    "veh period": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.461
+                    }
+                  }
+                ]
+              },
+              "freq_polices.veh_brand": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Freq_Polices",
+                    "ConceptualProperty": "VehBrand"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "veh brand": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "VehBrand": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "veh product": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "veh variety": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "veh marque": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "veh make": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "veh kind": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "veh sort": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "veh trademark": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "veh type": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "veh style": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "veh class": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  }
+                ]
+              },
+              "freq_polices.veh_gas": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Freq_Polices",
+                    "ConceptualProperty": "VehGas"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "veh gas": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "VehGas": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "veh air": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "veh vapor": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "veh fume": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "veh smoke": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "veh blast": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.461
+                    }
+                  },
+                  {
+                    "veh thrill": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.461
+                    }
+                  },
+                  {
+                    "veh trip": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.461
+                    }
+                  },
+                  {
+                    "veh experience": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.461
+                    }
+                  },
+                  {
+                    "veh bunkum": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.451
+                    }
+                  },
+                  {
+                    "veh nonsense": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.451
+                    }
+                  }
+                ]
+              },
+              "freq_polices.veh_power": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Freq_Polices",
+                    "ConceptualProperty": "VehPower"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "veh power": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "VehPower": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "veh authority": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "veh supremacy": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "veh dominance": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "veh dominion": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "veh sovereignty": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "veh control": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "veh influence": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "veh rule": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "veh command": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "veh clout": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  }
+                ]
+              },
+              "sev_sinistre": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sev_Sinistres"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "sev sinistre": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Sev_Sinistres": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "sev_sinistre.I_dpol": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sev_Sinistres",
+                    "ConceptualProperty": "IDpol"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "I dpol": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "IDpol": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              },
+              "sev_sinistre.claim_amount": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sev_Sinistres",
+                    "ConceptualProperty": "ClaimAmount"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "claim amount": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "ClaimAmount": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "claim quantity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "claim volume": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "claim expanse": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "claim extent": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "claim sum": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "claim aggregate": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  }
+                ]
+              },
+              "v_Mesures_mesure": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Mesures"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "_mesure": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "v_Mesures_mesure.colonne_1": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Mesures",
+                    "ConceptualProperty": "Colonne 1"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "colonne 1": {
+                      "State": "Generated"
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              },
+              "v_Mesures_mesure.cout_moyen_sinistre": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Mesures",
+                    "ConceptualProperty": "Cout_Moyen_Sinistre"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "cout moyen sinistre": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Cout_Moyen_Sinistre": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "Coût moyen par sinistre": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "v_Mesures_mesure.cout_total_sinistres": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Mesures",
+                    "ConceptualProperty": "Cout_Total_Sinistres"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "cout total sinistres": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Cout_Total_Sinistres": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "cout aggregate sinistre": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "cout overall sinistre": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  }
+                ]
+              },
+              "v_Mesures_mesure.exposition_totale": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Mesures",
+                    "ConceptualProperty": "Exposition_Totale"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "exposition totale": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Exposition_Totale": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "v_Mesures_mesure.frequence_sinistres": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Mesures",
+                    "ConceptualProperty": "Frequence_Sinistres"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "frequence sinistres": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Frequence_Sinistres": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "v_Mesures_mesure.loss_ratio": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Mesures",
+                    "ConceptualProperty": "Indice prime pure"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "loss ratio": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Loss_Ratio": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "ratio": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "loss relation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "loss percentage": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "loss quotient": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "loss relationship": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "relation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "quotient": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "relationship": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "loss proportion": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "loss share": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "loss fraction": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  }
+                ]
+              },
+              "v_Mesures_mesure.nb_polices": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Mesures",
+                    "ConceptualProperty": "Nb_Polices"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "nb polices": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Nb_Polices": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "Nombre de Polices": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "v_Mesures_mesure.nb_sinistres": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Mesures",
+                    "ConceptualProperty": "Nb_Sinistres"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "nb sinistres": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Nb_Sinistres": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "Sinistres enregistrés": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "v_Mesures_mesure.prime_pure_unitaire_globale": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Mesures",
+                    "ConceptualProperty": "Prime_Pure_Unitaire_Globale"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "prime pure unitaire globale": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Prime_Pure_Unitaire_Globale": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "v_Mesures_mesure.prime_totale_simulee": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "_Mesures",
+                    "ConceptualProperty": "Prime_Totale_Simulee"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "prime totale simulee": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Prime_Totale_Simulee": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              }
+            },
+            "Language": "en-US",
+            "Relationships": {
+              "freq_polices_has_A_sinistre": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "freq_polices.A_sinistre"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_A_sinistre",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "freq_polices.A_sinistre": {
+                    "Target": {
+                      "Entity": "freq_polices.A_sinistre"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_I_dpol": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "freq_polices.I_dpol"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_I_dpols",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "freq_polices.I_dpol": {
+                    "Target": {
+                      "Entity": "freq_polices.I_dpol"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_area": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "freq_polices.area"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_areas",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "freq_polices.area": {
+                    "Target": {
+                      "Entity": "freq_polices.area"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_bonus_malus": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "freq_polices.bonus_malus"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_bonus_maluses",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "freq_polices.bonus_malus": {
+                    "Target": {
+                      "Entity": "freq_polices.bonus_malus"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_claim_nb": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "freq_polices.claim_nb"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_claim_nb",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "freq_polices.claim_nb": {
+                    "Target": {
+                      "Entity": "freq_polices.claim_nb"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_claim_total": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "freq_polices.claim_total"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_claim_totals",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "freq_polices.claim_total": {
+                    "Target": {
+                      "Entity": "freq_polices.claim_total"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_density": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "freq_polices.density"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_densities",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "freq_polices.density": {
+                    "Target": {
+                      "Entity": "freq_polices.density"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_driv_age": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "freq_polices.driv_age"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_driv_ages",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "freq_polices.driv_age": {
+                    "Target": {
+                      "Entity": "freq_polices.driv_age"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_exposure": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "freq_polices.exposure"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_exposures",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "freq_polices.exposure": {
+                    "Target": {
+                      "Entity": "freq_polices.exposure"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_region": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "freq_polices.region"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_regions",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "freq_polices.region": {
+                    "Target": {
+                      "Entity": "freq_polices.region"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_tranche_age_conducteur": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "freq_polices.tranche_age_conducteur"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_tranche_age_conducteurs",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "freq_polices.tranche_age_conducteur": {
+                    "Target": {
+                      "Entity": "freq_polices.tranche_age_conducteur"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_tranche_puissance": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "freq_polices.tranche_puissance"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_tranche_puissance",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "freq_polices.tranche_puissance": {
+                    "Target": {
+                      "Entity": "freq_polices.tranche_puissance"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_v_Mesures_mesure_cout_moyen_sinistre": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Mesures_mesure.cout_moyen_sinistre"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_cout_moyen_sinistre",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "v_Mesures_mesure.cout_moyen_sinistre": {
+                    "Target": {
+                      "Entity": "v_Mesures_mesure.cout_moyen_sinistre"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_v_Mesures_mesure_cout_total_sinistres": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Mesures_mesure.cout_total_sinistres"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_cout_total_sinistres",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "v_Mesures_mesure.cout_total_sinistres": {
+                    "Target": {
+                      "Entity": "v_Mesures_mesure.cout_total_sinistres"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_v_Mesures_mesure_exposition_totale": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Mesures_mesure.exposition_totale"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_exposition_totale",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "v_Mesures_mesure.exposition_totale": {
+                    "Target": {
+                      "Entity": "v_Mesures_mesure.exposition_totale"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_v_Mesures_mesure_frequence_sinistres": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Mesures_mesure.frequence_sinistres"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_frequence_sinistres",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "v_Mesures_mesure.frequence_sinistres": {
+                    "Target": {
+                      "Entity": "v_Mesures_mesure.frequence_sinistres"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_v_Mesures_mesure_loss_ratio": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Mesures_mesure.loss_ratio"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_loss_ratio",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "v_Mesures_mesure.loss_ratio": {
+                    "Target": {
+                      "Entity": "v_Mesures_mesure.loss_ratio"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_v_Mesures_mesure_nb_polices": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Mesures_mesure.nb_polices"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_nb_polices",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "v_Mesures_mesure.nb_polices": {
+                    "Target": {
+                      "Entity": "v_Mesures_mesure.nb_polices"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_v_Mesures_mesure_nb_sinistres": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Mesures_mesure.nb_sinistres"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_nb_sinistres",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "v_Mesures_mesure.nb_sinistres": {
+                    "Target": {
+                      "Entity": "v_Mesures_mesure.nb_sinistres"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_v_Mesures_mesure_prime_pure_unitaire_globale": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Mesures_mesure.prime_pure_unitaire_globale"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_prime_pure_unitaire_globale",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "v_Mesures_mesure.prime_pure_unitaire_globale": {
+                    "Target": {
+                      "Entity": "v_Mesures_mesure.prime_pure_unitaire_globale"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_v_Mesures_mesure_prime_totale_simulee": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "v_Mesures_mesure.prime_totale_simulee"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_prime_totale_simulee",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "v_Mesures_mesure.prime_totale_simulee": {
+                    "Target": {
+                      "Entity": "v_Mesures_mesure.prime_totale_simulee"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_veh_age": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "freq_polices.veh_age"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_veh_ages",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "freq_polices.veh_age": {
+                    "Target": {
+                      "Entity": "freq_polices.veh_age"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_veh_brand": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "freq_polices.veh_brand"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_veh_brands",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "freq_polices.veh_brand": {
+                    "Target": {
+                      "Entity": "freq_polices.veh_brand"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_veh_gas": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "freq_polices.veh_gas"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_veh_gasses",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "freq_polices.veh_gas": {
+                    "Target": {
+                      "Entity": "freq_polices.veh_gas"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_has_veh_power": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "freq_polices.veh_power"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_veh_powers",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "freq_polices.veh_power": {
+                    "Target": {
+                      "Entity": "freq_polices.veh_power"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_in_area": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "ID": "freq_polices_are_in_areas",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "freq_polices.area"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "freq_polices.area": {
+                    "Target": {
+                      "Entity": "freq_polices.area"
+                    }
+                  }
+                },
+                "SemanticSlots": {
+                  "Where": {
+                    "Role": "freq_polices.area"
+                  }
+                },
+                "State": "Generated"
+              },
+              "freq_polices_in_region": {
+                "Binding": {
+                  "ConceptualEntity": "Freq_Polices"
+                },
+                "Phrasings": [
+                  {
+                    "ID": "freq_polices_are_in_regions",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "freq_polices.region"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "freq_polices.region": {
+                    "Target": {
+                      "Entity": "freq_polices.region"
+                    }
+                  }
+                },
+                "SemanticSlots": {
+                  "Where": {
+                    "Role": "freq_polices.region"
+                  }
+                },
+                "State": "Generated"
+              },
+              "sev_sinistre_has_claim_amount": {
+                "Binding": {
+                  "ConceptualEntity": "Sev_Sinistres"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "sev_sinistre.claim_amount"
+                      },
+                      "Subject": {
+                        "Role": "sev_sinistre"
+                      }
+                    },
+                    "ID": "sev_sinistres_have_claim_amounts",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "sev_sinistre": {
+                    "Target": {
+                      "Entity": "sev_sinistre"
+                    }
+                  },
+                  "sev_sinistre.claim_amount": {
+                    "Target": {
+                      "Entity": "sev_sinistre.claim_amount"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "sev_sinistre_has_freq_polices": {
+                "Binding": {
+                  "ConceptualEntity": "Sev_Sinistres"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "freq_polices"
+                      },
+                      "Subject": {
+                        "Role": "sev_sinistre"
+                      }
+                    },
+                    "ID": "sev_sinistres_have_freq_polices",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "sev_sinistre"
+                      },
+                      "Subject": {
+                        "Role": "freq_polices"
+                      }
+                    },
+                    "ID": "freq_polices_have_sev_sinistres",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "freq_polices": {
+                    "Target": {
+                      "Entity": "freq_polices"
+                    }
+                  },
+                  "sev_sinistre": {
+                    "Target": {
+                      "Entity": "sev_sinistre"
+                    }
+                  }
+                },
+                "State": "Generated"
+              }
+            },
+            "Version": "3.5.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "AutoDetected_6e25f153-5bef-413c-afd0-fae5dc173237",
+        "fromColumn": "IDpol",
+        "fromTable": "Sev_Sinistres",
+        "toColumn": "IDpol",
+        "toTable": "Freq_Polices"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "Freq_Polices",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "IDpol",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d5cb7914-d4c1-4019-ad2e-ec4c72e5c087",
+            "sourceColumn": "IDpol",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Exposure",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "735e1be1-14f0-47dd-9a3d-1b30cfb6baa7",
+            "sourceColumn": "Exposure",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Area",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dc85e884-3857-4526-9395-c39ea1c6d8ce",
+            "sourceColumn": "Area",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "VehPower",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c21268d2-4ee4-4fec-a42c-868939d4cb34",
+            "sourceColumn": "VehPower",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "VehAge",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ba8a2401-5840-45a5-bd49-9dd51bad5cc1",
+            "sourceColumn": "VehAge",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DrivAge",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1de2ebdd-b8a9-488c-af16-7b93689e5292",
+            "sourceColumn": "DrivAge",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "BonusMalus",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "15c3b978-6ec8-492d-938d-988ac8b6ac87",
+            "sourceColumn": "BonusMalus",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "VehBrand",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d181bb01-4797-4924-a483-6c570abe1fdc",
+            "sourceColumn": "VehBrand",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "VehGas",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f984a453-00ba-40c5-926a-761eb18c8a88",
+            "sourceColumn": "VehGas",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Density",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "262ac0b3-8638-4ad0-82c4-72835fdae16f",
+            "sourceColumn": "Density",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Region",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b198cfb0-cb30-4dbb-9fad-42305ffc70f4",
+            "sourceColumn": "Region",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ClaimTotal",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "5968957f-f3b1-48b1-89a2-20980b17ac88",
+            "sourceColumn": "ClaimTotal",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ClaimNb",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b307c292-db60-40e2-b572-73001302dafe",
+            "sourceColumn": "ClaimNb",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tranche_Age_Conducteur",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "\r",
+              "SWITCH(\r",
+              "    TRUE(),\r",
+              "    Freq_Polices[DrivAge] <= 25, \"Jeune conducteur\",\r",
+              "    Freq_Polices[DrivAge] <= 40, \"Confirmé\",\r",
+              "    Freq_Polices[DrivAge] <= 60, \"Expérimenté\",\r",
+              "    \"Senior\"\r",
+              ")"
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "3cd1ef69-2cdf-40d0-9b20-202d96a77699",
+            "sortByColumn": "Ordre_Age",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Tranche_Puissance",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "\r",
+              "SWITCH(\r",
+              "    TRUE(),\r",
+              "    Freq_Polices[VehPower] <= 6, \"Faible\",\r",
+              "    Freq_Polices[VehPower] <= 9, \"Moyenne\",\r",
+              "    \"Élevée\"\r",
+              ")"
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "5bd6d2b1-38fe-4206-9316-f96b1d0498ed",
+            "sortByColumn": "Ordre_Puissance",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "A_Sinistre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "IF(Freq_Polices[ClaimNb] > 0, \"Oui\", \"Non\")"
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "eba8289d-6852-42ad-8d0d-53aa6c6bacc5",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Tranche_BonusMalus",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "\r",
+              "SWITCH(\r",
+              "    TRUE(),\r",
+              "    Freq_Polices[BonusMalus] <= 79, \"Bonus fort\",\r",
+              "    Freq_Polices[BonusMalus] <= 99, \"Bonus léger\",\r",
+              "    Freq_Polices[BonusMalus] = 100, \"Neutre\",\r",
+              "    Freq_Polices[BonusMalus] <= 150, \"Malus\",\r",
+              "    \"Malus fort\"\r",
+              ")"
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "7176d035-ff88-4f2b-9b88-db173fd8d50b",
+            "sortByColumn": "Ordre_BonusMalus",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Ordre_Age",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": [
+              "SWITCH(",
+              "    TRUE(),",
+              "    Freq_Polices[DrivAge] <= 25, 1,",
+              "    Freq_Polices[DrivAge] <= 40, 2,",
+              "    Freq_Polices[DrivAge] <= 60, 3,",
+              "    4",
+              ")"
+            ],
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "447a282e-9143-40c5-9731-3ecc4dcb4e80",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Ordre_Puissance",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": [
+              "SWITCH(",
+              "    TRUE(),",
+              "    Freq_Polices[VehPower] <= 6, 1,",
+              "    Freq_Polices[VehPower] <= 9, 2,",
+              "    3",
+              ")"
+            ],
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "1b791baf-531f-42cb-90f8-9bbd26102471",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Ordre_BonusMalus",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": [
+              "SWITCH(",
+              "    TRUE(),",
+              "    Freq_Polices[BonusMalus] <= 79, 1,",
+              "    Freq_Polices[BonusMalus] <= 99, 2,",
+              "    Freq_Polices[BonusMalus] = 100, 3,",
+              "    Freq_Polices[BonusMalus] <= 150, 4,",
+              "    5",
+              ")"
+            ],
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "e2aacd6f-d590-4a53-84f3-df55d73440f5",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Région",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "SWITCH(",
+              "    Freq_Polices[Region],",
+              "    \"R11\", \"Île-de-France\",",
+              "    \"R21\", \"Champagne-Ardenne\",",
+              "    \"R22\", \"Picardie\",",
+              "    \"R23\", \"Haute-Normandie\",",
+              "    \"R24\", \"Centre\",",
+              "    \"R25\", \"Basse-Normandie\",",
+              "    \"R26\", \"Bourgogne\",",
+              "    \"R31\", \"Nord-Pas-de-Calais\",",
+              "    \"R41\", \"Lorraine\",",
+              "    \"R42\", \"Alsace\",",
+              "    \"R43\", \"Franche-Comté\",",
+              "    \"R52\", \"Pays de la Loire\",",
+              "    \"R53\", \"Bretagne\",",
+              "    \"R54\", \"Poitou-Charentes\",",
+              "    \"R72\", \"Aquitaine\",",
+              "    \"R73\", \"Midi-Pyrénées\",",
+              "    \"R74\", \"Limousin\",",
+              "    \"R82\", \"Rhône-Alpes\",",
+              "    \"R83\", \"Auvergne\",",
+              "    \"R91\", \"Languedoc-Roussillon\",",
+              "    \"R93\", \"Provence-Alpes-Côte d'Azur\",",
+              "    \"R94\", \"Corse\",",
+              "    Freq_Polices[Region]",
+              ")"
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "0f1ee9ac-9414-46da-ac25-e7ea849ec194",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "db4e0f95-a608-44f5-9ca1-f4dc6aef1a15",
+        "partitions": [
+          {
+            "name": "Freq_Polices",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\Users\\micho\\Downloads\\projet_loss_ratio\\freMTPL2freq.csv\"),[Delimiter=\",\", Columns=14, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"En-têtes promus\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Type modifié\" = Table.TransformColumnTypes(#\"En-têtes promus\",{{\"\", Int64.Type}, {\"IDpol\", Int64.Type}, {\"Exposure\", type number}, {\"Area\", type text}, {\"VehPower\", Int64.Type}, {\"VehAge\", Int64.Type}, {\"DrivAge\", Int64.Type}, {\"BonusMalus\", Int64.Type}, {\"VehBrand\", type text}, {\"VehGas\", type text}, {\"Density\", Int64.Type}, {\"Region\", type text}, {\"ClaimTotal\", type number}, {\"ClaimNb\", Int64.Type}}),",
+                "    #\"Colonnes supprimées\" = Table.RemoveColumns(#\"Type modifié\",{\"\"})",
+                "in",
+                "    #\"Colonnes supprimées\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sev_Sinistres",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "IDpol",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ab5adf89-65a6-4d24-a7f3-a15c82c0f1ac",
+            "sourceColumn": "IDpol",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ClaimAmount",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "539d8387-f0c0-4ec4-afd0-88e362bf2d6d",
+            "sourceColumn": "ClaimAmount",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "05867dc0-1c0d-4ad1-b38b-6bc2ba6b54b6",
+        "partitions": [
+          {
+            "name": "Sev_Sinistres",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\Users\\micho\\Downloads\\projet_loss_ratio\\freMTPL2sev.csv\"),[Delimiter=\",\", Columns=2, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"En-têtes promus\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Type modifié\" = Table.TransformColumnTypes(#\"En-têtes promus\",{{\"IDpol\", Int64.Type}, {\"ClaimAmount\", type number}})",
+                "in",
+                "    #\"Type modifié\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "_Mesures",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Colonne 1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "c44df1d2-a7e5-40fa-93fb-27ec834777bd",
+            "sourceColumn": "Colonne 1",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "2ff7daa9-f0a9-41fa-adaa-595ba1cf5234",
+        "measures": [
+          {
+            "name": "Cout_Moyen_Sinistre",
+            "expression": "DIVIDE([Cout_Total_Sinistres], [Nb_Sinistres])",
+            "formatString": "#,0.00\\ \"€\";-#,0.00\\ \"€\";#,0.00\\ \"€\"",
+            "lineageTag": "0588732e-23d9-4899-b369-d9a1e55587eb"
+          },
+          {
+            "name": "Cout_Total_Sinistres",
+            "expression": "SUM(Freq_Polices[ClaimTotal])",
+            "formatString": "#,0.00\\ \"€\";-#,0.00\\ \"€\";#,0.00\\ \"€\"",
+            "lineageTag": "b6ebff19-d999-4bc6-83ee-6c3027268208"
+          },
+          {
+            "name": "Exposition_Totale",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "SUM(Freq_Polices[Exposure])",
+            "lineageTag": "a6cdcdda-2d8d-4c18-85f1-cf939bd51e45"
+          },
+          {
+            "name": "Frequence_Sinistres",
+            "expression": "DIVIDE([Nb_Sinistres], [Exposition_Totale])",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "lineageTag": "1aff1e6e-168a-4764-a22f-a0486b3dfb40"
+          },
+          {
+            "name": "Nb_Polices",
+            "expression": "COUNTROWS(Freq_Polices)",
+            "formatString": "0",
+            "lineageTag": "7cbd30e3-2f4c-4be6-8e11-e2ea6f969cc7"
+          },
+          {
+            "name": "Nb_Sinistres",
+            "expression": "SUM(Freq_Polices[ClaimNb])",
+            "formatString": "0",
+            "lineageTag": "835463b5-6d33-4239-953e-3472fdd39149"
+          },
+          {
+            "name": "Prime_Pure_Unitaire_Globale",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    DIVIDE([Cout_Total_Sinistres], [Exposition_Totale]),",
+              "    ALL(Freq_Polices)",
+              ")"
+            ],
+            "formatString": "#,0.00\\ \"€\";-#,0.00\\ \"€\";#,0.00\\ \"€\"",
+            "lineageTag": "5df870ce-1694-4419-aa0b-0ac996304913"
+          },
+          {
+            "name": "Prime_Totale_Simulee",
+            "expression": "[Prime_Pure_Unitaire_Globale] * [Exposition_Totale]",
+            "formatString": "#,0.00\\ \"€\";-#,0.00\\ \"€\";#,0.00\\ \"€\"",
+            "lineageTag": "6bbf504f-3e63-41fb-8ddf-bf9704ee986c"
+          },
+          {
+            "name": "Indice prime pure",
+            "description": "Coût des sinistres par année d'exposition du segment, divisé par celui du portefeuille (100 % = moyenne). Ce n'est pas une rentabilité : les primes réelles ne sont pas dans les données.",
+            "displayFolder": "1. Indices",
+            "expression": "DIVIDE([Cout_Total_Sinistres], [Prime_Totale_Simulee])",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "lineageTag": "95cd97bf-4b1d-4a1e-9b9b-d4d7faeedbb0"
+          },
+          {
+            "name": "Seuil écrêtement",
+            "description": "Seuil des sinistres graves : 99,5e percentile du montant des sinistres. Au-delà, un sinistre est plafonné à ce montant.",
+            "displayFolder": "2. Sinistres graves",
+            "expression": [
+              "CALCULATE(",
+              "    PERCENTILEX.INC(FILTER(Sev_Sinistres, NOT ISBLANK(RELATED(Freq_Polices[IDpol]))), Sev_Sinistres[ClaimAmount], 0.995),",
+              "    REMOVEFILTERS(Sev_Sinistres),",
+              "    REMOVEFILTERS(Freq_Polices)",
+              ")"
+            ],
+            "formatString": "#,0\\ \"€\";-#,0\\ \"€\";#,0\\ \"€\"",
+            "lineageTag": "bdc77393-49b0-45be-aedd-b90acff73a0a"
+          },
+          {
+            "name": "Coût total écrêté",
+            "description": "Coût des sinistres, chaque sinistre étant plafonné au seuil d'écrêtement.",
+            "displayFolder": "2. Sinistres graves",
+            "expression": [
+              "VAR Seuil = [Seuil écrêtement]",
+              "RETURN",
+              "    SUMX(FILTER(Sev_Sinistres, NOT ISBLANK(RELATED(Freq_Polices[IDpol]))), MIN(Sev_Sinistres[ClaimAmount], Seuil))"
+            ],
+            "formatString": "#,0.00\\ \"€\";-#,0.00\\ \"€\";#,0.00\\ \"€\"",
+            "lineageTag": "09cb0f7c-bc5c-4782-a548-1122def3bea6"
+          },
+          {
+            "name": "Coût moyen écrêté",
+            "description": "Coût moyen par sinistre après écrêtement des sinistres graves.",
+            "displayFolder": "2. Sinistres graves",
+            "expression": "DIVIDE([Coût total écrêté], COUNTROWS(FILTER(Sev_Sinistres, NOT ISBLANK(RELATED(Freq_Polices[IDpol])))))",
+            "formatString": "#,0.00\\ \"€\";-#,0.00\\ \"€\";#,0.00\\ \"€\"",
+            "lineageTag": "70aa3a69-28ce-4b1a-ba39-2c71022e330b"
+          },
+          {
+            "name": "Indice prime pure écrêtée",
+            "description": "Indice de prime pure calculé avec les sinistres graves écrêtés (100 % = moyenne). Il n'est plus tiré par un ou deux sinistres exceptionnels.",
+            "displayFolder": "1. Indices",
+            "expression": [
+              "VAR PP_Segment = DIVIDE([Coût total écrêté], [Exposition_Totale])",
+              "VAR PP_Portefeuille =",
+              "    CALCULATE(",
+              "        DIVIDE([Coût total écrêté], [Exposition_Totale]),",
+              "        REMOVEFILTERS(Freq_Polices),",
+              "        REMOVEFILTERS(Sev_Sinistres)",
+              "    )",
+              "RETURN",
+              "    DIVIDE(PP_Segment, PP_Portefeuille)"
+            ],
+            "formatString": "0.0%;-0.0%;0.0%",
+            "lineageTag": "6fd407ae-05cf-4601-aa67-5bf289226241"
+          },
+          {
+            "name": "Nb sinistres graves",
+            "description": "Nombre de sinistres au-dessus du seuil d'écrêtement.",
+            "displayFolder": "2. Sinistres graves",
+            "expression": [
+              "VAR Seuil = [Seuil écrêtement]",
+              "RETURN",
+              "    COUNTROWS(FILTER(FILTER(Sev_Sinistres, NOT ISBLANK(RELATED(Freq_Polices[IDpol]))), Sev_Sinistres[ClaimAmount] > Seuil))"
+            ],
+            "formatString": "0",
+            "lineageTag": "7fc31e94-1d60-494f-abfe-3de89268ece8"
+          },
+          {
+            "name": "Part du coût au-dessus du seuil",
+            "description": "Part du coût total qui dépasse le seuil d'écrêtement.",
+            "displayFolder": "2. Sinistres graves",
+            "expression": [
+              "VAR Seuil = [Seuil écrêtement]",
+              "VAR Sinistres = FILTER(Sev_Sinistres, NOT ISBLANK(RELATED(Freq_Polices[IDpol])))",
+              "RETURN",
+              "    DIVIDE(",
+              "        SUMX(Sinistres, MAX(Sev_Sinistres[ClaimAmount] - Seuil, 0)),",
+              "        SUMX(Sinistres, Sev_Sinistres[ClaimAmount])",
+              "    )"
+            ],
+            "formatString": "0.0%;-0.0%;0.0%",
+            "lineageTag": "c85f23bb-0d46-467b-89a5-5ce4aab648df"
+          },
+          {
+            "name": "Fréquence IC bas",
+            "description": "Borne basse de l'intervalle de confiance à 95 % de la fréquence (approximation de Poisson).",
+            "displayFolder": "3. Crédibilité",
+            "expression": "DIVIDE(MAX([Nb_Sinistres] - 1.96 * SQRT([Nb_Sinistres]), 0), [Exposition_Totale])",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "lineageTag": "baf21f04-0e13-490b-a95c-84ff7fae5cc7"
+          },
+          {
+            "name": "Fréquence IC haut",
+            "description": "Borne haute de l'intervalle de confiance à 95 % de la fréquence (approximation de Poisson).",
+            "displayFolder": "3. Crédibilité",
+            "expression": "DIVIDE([Nb_Sinistres] + 1.96 * SQRT([Nb_Sinistres]), [Exposition_Totale])",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "lineageTag": "431e3a1e-a8bb-4b91-a947-669cafbeaabd"
+          },
+          {
+            "name": "Crédibilité",
+            "description": "Signale les segments où les résultats reposent sur trop peu de sinistres.",
+            "displayFolder": "3. Crédibilité",
+            "expression": [
+              "IF(",
+              "    ISBLANK([Nb_Polices]),",
+              "    BLANK(),",
+              "    IF([Nb_Sinistres] < 50, \"⚠ moins de 50 sinistres\", \"OK\")",
+              ")"
+            ],
+            "lineageTag": "52d00b1e-bdfd-4e47-8893-07a8d7e8ec30"
+          },
+          {
+            "name": "Part du coût des sinistres graves",
+            "description": "Part du coût total représentée par les sinistres graves (au-delà du seuil d'écrêtement).",
+            "displayFolder": "2. Sinistres graves",
+            "expression": [
+              "VAR Seuil = [Seuil écrêtement]",
+              "VAR Sinistres = FILTER(Sev_Sinistres, NOT ISBLANK(RELATED(Freq_Polices[IDpol])))",
+              "RETURN",
+              "    DIVIDE(",
+              "        SUMX(FILTER(Sinistres, Sev_Sinistres[ClaimAmount] > Seuil), Sev_Sinistres[ClaimAmount]),",
+              "        SUMX(Sinistres, Sev_Sinistres[ClaimAmount])",
+              "    )"
+            ],
+            "formatString": "0.0%;-0.0%;0.0%",
+            "lineageTag": "19481ea9-3021-44eb-b210-4f858237f700"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "_Mesures",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#\"Colonne 1\" = _t]),",
+                "    #\"Type modifié\" = Table.TransformColumnTypes(Source,{{\"Colonne 1\", type text}})",
+                "in",
+                "    #\"Type modifié\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Paramètre",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "cdddd366f54a42a1805d379094c396ed"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Paramètre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": false,
+            "lineageTag": "2932e651-afe1-4343-88e2-f7945a0ceb7e",
+            "relatedColumnDetails": {
+              "groupByColumns": [
+                {
+                  "groupingColumn": "Paramètre Champs"
+                }
+              ]
+            },
+            "sortByColumn": "Paramètre Commande",
+            "sourceColumn": "[Value1]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Paramètre Champs",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "extendedProperties": [
+              {
+                "name": "ParameterMetadata",
+                "type": "json",
+                "value": {
+                  "kind": 2,
+                  "version": 3
+                }
+              }
+            ],
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": false,
+            "lineageTag": "eb627aa9-7f74-451d-89f9-258279c5cf98",
+            "sortByColumn": "Paramètre Commande",
+            "sourceColumn": "[Value2]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Paramètre Commande",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": false,
+            "lineageTag": "bba1202a-868f-46a6-8a8d-c5fe2de1b361",
+            "sourceColumn": "[Value3]",
+            "summarizeBy": "sum",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "lineageTag": "6af81bcd-1036-4c08-b912-7c4bdecea076",
+        "partitions": [
+          {
+            "name": "Paramètre",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "{",
+                "    (\"Indice prime pure\", NAMEOF('_Mesures'[Indice prime pure]), 0),",
+                "    (\"Nb_Polices\", NAMEOF('_Mesures'[Nb_Polices]), 1),",
+                "    (\"Nb_Sinistres\", NAMEOF('_Mesures'[Nb_Sinistres]), 2),",
+                "    (\"Cout_Moyen_Sinistre\", NAMEOF('_Mesures'[Cout_Moyen_Sinistre]), 3),",
+                "    (\"Exposition_Totale\", NAMEOF('_Mesures'[Exposition_Totale]), 4)",
+                "}"
+              ],
+              "type": "calculated"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

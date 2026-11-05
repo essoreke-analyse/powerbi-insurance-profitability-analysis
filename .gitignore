@@ -1,0 +1,5 @@
+data/*.csv
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+.ipynb_checkpoints/
+__pycache__/
